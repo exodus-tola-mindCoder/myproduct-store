@@ -4,7 +4,7 @@ import path from "path"
 import { connectDB } from "./config/db.js"; // to connect with mongoDB
 import productRoutes from "./Routes/product.route.js" // our products routes
 
-dotenv.config({path: "../.env"});
+dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
